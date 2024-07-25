@@ -1,0 +1,25 @@
+/* src/csssignlog/AddImagePage.css */
+.add-image-page {
+    padding: 20px;
+  }
+  
+  .add-image-page input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .add-image-page button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-image-page button:hover {
+    background-color: #0056b3;
+  }
+  

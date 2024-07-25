@@ -1,0 +1,126 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login-image-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.login-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.login-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #8ad1dc, #ffffff);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+.swal-custom-confirm {
+  background-color: #b8727e !important;
+  color: white;
+  border: none;
+}
+
+.login-form h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #b8727e;
+}
+
+.login-form .form-group {
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form .form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #b8727e;
+  font-weight: bold;
+}
+
+.login-form .form-control {
+  width: 100%;
+  max-width: 350px; /* Ensures inputs don't exceed this width */
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #b2ebf2;
+}
+
+.login-form .btn-primary {
+  background: #b8727e;
+  color: white;
+  margin-left: 25px;
+  border-color: #b8727e;
+  width: 100%;
+  max-width: 350px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+.login-form .btn-link {
+  background: #b8727e;
+  color: white;
+  border-color: #b8727e;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.button-container .btn-link {
+  margin-top: 10px; /* Add space between buttons */
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-image-container {
+    display: none;
+  }
+
+  .login-form {
+    flex: 1;
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,122 @@
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+  .signup-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .image-container {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .signup-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #8ad1dc, #ffffff);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+  }
+  
+  .signup-form h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #b8727e;
+  }
+  
+  .signup-form .form-group {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  .signup-form .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #b8727e;
+    font-weight: bold;
+  }
+  
+  .signup-form .form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #b2ebf2;
+  }
+  
+  .signup-form .captcha-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .signup-form .captcha-text {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-form .button-group {
+    font-size: 400px;
+    display: flex;
+    margin-left: 10px;
+
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .signup-form .btn-primary {
+    color: white;
+    background: #b8727e;
+    border-color: #b8727e;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  .signup-form .btn-link {
+    color: #b8727e;
+  }
+  
+  .signup-form .already {
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .signup-container {
+      flex-direction: column;
+    }
+  
+    .image-container {
+      display: none;
+    }
+  
+    .signup-form {
+      flex: 1;
+      padding: 2rem;
+    }
+  }
+  

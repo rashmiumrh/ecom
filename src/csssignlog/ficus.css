@@ -1,0 +1,97 @@
+/* Container for Plant Cards */
+.plant-cards {
+    display: flex;
+    flex-wrap: nowrap; /* Keep all cards in one line */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center cards horizontally */
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+  }
+  /* Container for the full-height layout with gradient background */
+.full-height-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #8ad1dc, #b8727e); /* Gradient background color */
+    overflow: hidden; /* Prevent scrolling outside the container */
+  }
+  
+  /* Individual Plant Card */
+  .plant-card {
+    width: 200px; /* Increased width of the card */
+    background-color: #fff; /* Card background color */
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    overflow: hidden; /* Ensure no overflow of content */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    max-width: 100%; /* Ensure the card doesn't overflow its container */
+    height: 300px; /* Increased height of the card */
+  }
+  
+  /* Image inside Plant Card */
+  .plant-image {
+    width: 100%; /* Full width of the card */
+    height: 200px; /* Increased height for the image */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+  }
+  
+  /* Card Body */
+  .card-body {
+    height: 1000px;
+    padding: 10px; /* Padding inside the card body */
+    text-align: center; /* Center text */
+    flex: 1; /* Allow the card body to take remaining space */
+  }
+  
+  /* Card Title */
+  .card-title {
+    font-size: 16px; /* Font size for the title */
+    margin: 10px 0; /* Margin above and below the title */
+  }
+  .edit-button:hover::after {
+    content: "Edit";
+  }
+  
+  .delete-button:hover::after {
+    content: "Delete";
+  }
+  /* Search Box */
+  .search-box {
+    padding: 12px; /* Increased padding inside the search box */
+    width: 100%; /* Full width of the container */
+    max-width: 1400px; /* Increased maximum width */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Increased font size */
+    margin: 20px auto; /* Center the search box horizontally */
+    display: block;
+  }
+  
+  /* Counter Container */
+  .counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between buttons and count */
+  }
+  
+  .counter-container button {
+    padding: 8px 16px; /* Increased padding inside buttons */
+    border: none;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .counter-container button.remove {
+    background: linear-gradient(135deg, #8ad1dc, #b8727e); /* Gradient background color */
+  }
+  
+  .counter-container span {
+    font-size: 18px; /* Increased font size for count */
+    display: flex;
+    align-items: center;
+  }
+  
